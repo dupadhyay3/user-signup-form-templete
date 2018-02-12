@@ -22,7 +22,7 @@ if(isset($_POST["Submit"])){
     $err[2]=val($ele[2],$msg[2],$regex[3]);
     $err[3]=val($ele[3],$msg[3],$regex[4]);
 
-    if(!empty($ele[0]) && !empty($ele[1]) && !empty($ele[2]) && !empty($ele[3])){
+    if(!empty($ele[0]) && !empty($ele[1]) && !empty($ele[2]) && !empty($ele[3]) && empty($err[0]) && empty($err[1]) && empty($err[2]) && empty($err[3]) ){
         $scrpt="<script> alert('Form Validate Successfully');</script>";
     }
 }
