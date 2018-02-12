@@ -8,11 +8,12 @@
 body {
     background-color: rgba(120, 75, 40, currentColor);
     background-image: url("../img/bg1.jpg");
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     line-height: 1.5;
     margin: auto;
+    /* font-size: 100%; */
 }
 
 body,
@@ -80,7 +81,7 @@ h3 {
 }
 
 .form-main {
-    width: 35%;
+    width: 36%;
     /* height: 80%; */
     margin: auto;
     text-align: center;
@@ -104,6 +105,7 @@ h3 {
     text-align: center;
     height: 40%;
     width: 40%;
+    /* position: fixed; */
 }
 
 .form-main-top hr {
@@ -117,6 +119,7 @@ h3 {
     position: absolute;
     vertical-align: middle;
     margin-top: 21px;
+    font-size: 1.2vw;
 }
 
 .input-field hr {
@@ -141,22 +144,39 @@ input[type="password"]:active {
 
 input[type="text"],
 input[type="password"],
-input[type="submit"] {
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
     width: 100%;
     padding: 10px;
-    font-size: 11pt;
+    font-size: 1vw;
     margin: auto;
     margin-left: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-input[type="submit"] {
-    width: 100%;
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    width: 80%;
     padding: 10px;
-    font-size: 11pt;
+    font-size: 1vw;
     margin: auto;
     margin-top: 25px;
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+    background: #0099F7;
+    background: -webkit-linear-gradient(to right, #0099F7, #F11712);
+    background: linear-gradient(to right, #0099F7, #F11712);
+    color: white;
 }
 
 footer {
@@ -164,6 +184,7 @@ footer {
     vertical-align: middle;
     margin: auto;
     margin-bottom: 5%;
+    font-size: 1.5vw;
 }
 
 footer a {
@@ -172,6 +193,73 @@ footer a {
     font-family: 'Lato', sans-serif;
     text-decoration: none;
     text-transform: none;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+code {
+    color: aqua;
+    font-size: 1vw;
+}
+
+@media only screen and (max-width: 700px) {
+    input[type=submit],
+    input[type=reset],
+    input[type="button"] {
+        width: 100%;
+        margin-top: 0;
+        vertical-align: middle;
+    }
+    footer {
+        margin: auto;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .form-main {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    input[type=submit],
+    input[type=reset],
+    input[type="button"] {
+        width: 100%;
+        margin-top: 0;
+        vertical-align: middle;
+    }
+    footer {
+        margin: auto;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .form-main {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    input[type=submit],
+    input[type=reset],
+    input[type="button"] {
+        width: 100%;
+        margin-top: 0;
+        vertical-align: middle;
+    }
+    footer {
+        margin: auto;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .form-main {
+        width: 60%;
+    }
 }
 
 ::placeholder {
