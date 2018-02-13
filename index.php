@@ -1,6 +1,8 @@
 <?php
-$err= ["","","",""];
-$ele = ["","","",""];
+// $err= ["","","",""];
+// $ele = ["","","",""];
+// $err = $ele = array("","","","");
+$err = $ele = new SplFixedArray(4); #give size to array
 $scrpt="";
 function val($ele, $msg, $reg){
     if(empty($ele)){
