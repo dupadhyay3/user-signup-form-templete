@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 // $err= ["","","",""];
 // $ele = ["","","",""];
 // $err = $ele = array("","","","");
@@ -28,7 +28,7 @@ if(isset($_POST["Submit"])){
         $scrpt="<script> alert('Form Validate Successfully');</script>";
     }
 }
-?>
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +40,7 @@ if(isset($_POST["Submit"])){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-<?php echo $scrpt; ?>
+<!-- <?php echo $scrpt; ?> -->
     <!-- <script type = "text/javascript" language = "javascript">
         $(document).ready(function() {
 
@@ -64,30 +64,30 @@ if(isset($_POST["Submit"])){
             <hr>
         </div>
         <div class="form-main-bottom">
-            <form method="post" action="index.php">
+            <form method="post" action="index.html">
                 <div id="ipf1" class="input-field">
                     <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                    <input type="text" id="txtUsername" placeholder="Username" name="usrName" value="<?php echo $ele[0]; ?>">
+                    <input type="text" id="txtUsername" placeholder="Username" name="usrName" value="">
                     <hr>
-                    <code><?php echo $err[0]; ?></code>
+<!--                     <code><?php echo $err[0]; ?></code> -->
                 </div>
                 <div id="ipf2" class="input-field">
                     <i class="fa fa-lock" aria-hidden="true"></i>
-                    <input type="password" id="txtPassword" placeholder="Password" name="usrPwd" value="<?php echo $ele[1]; ?>">
+                    <input type="password" id="txtPassword" placeholder="Password" name="usrPwd" value="">
                     <hr>
-                    <code><?php echo $err[1]; ?></code>
+<!--                     <code><?php echo $err[1]; ?></code> -->
                 </div>
                 <div id="ipf3" class="input-field">
                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                    <input type="text" id="txtEmail" placeholder="Email" name="usrEml" value="<?php echo $ele[2]; ?>">
+                    <input type="text" id="txtEmail" placeholder="Email" name="usrEml" value="">
                     <hr>
-                    <code><?php echo $err[2]; ?></code>
+<!--                     <code><?php echo $err[2]; ?></code> -->
                 </div>
                 <div id="ipf4" class="input-field">
                     <i class="fa fa-mobile-phone w3l-4" aria-hidden="true"></i>
-                    <input type="text" id="txtMobile" placeholder="Mobile" name="usrMbl" value="<?php echo $ele[3]; ?>">
+                    <input type="text" id="txtMobile" placeholder="Mobile" name="usrMbl" value="">
                     <hr>
-                    <code><?php echo $err[3]; ?></code>
+<!--                     <code><?php echo $err[3]; ?></code> -->
                 </div>
                 <div class="input-field">
                     <input type="submit" id="btnSubmit" name="Submit" value="Submit">
@@ -95,6 +95,6 @@ if(isset($_POST["Submit"])){
             </form>
         </div>    
     </div>
-    <footer> &copy; <?php echo date("Y"); ?> user profile form. All rights reserved | Design by <a target="_blank" href="https://facebook.com/dupadhyay3">spyD3R</a></footer>
+    <footer> &copy; 2018 user profile form. All rights reserved | Design by <a target="_blank" href="https://facebook.com/dupadhyay3">spyD3R</a></footer>
 </body>
 </html>
